@@ -1,11 +1,11 @@
-#include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
 /**
- * main - enters a random number
+ * main - enters a random number to int
  * prints if number is positive, negative or zero
- * Return Always 0 (Sucess)
+ * Return: Always 0 (Sucess)
  */
 int main(void)
 {
