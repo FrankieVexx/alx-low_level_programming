@@ -1,16 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print alphabets - prints a-z
  * Write a function that prints the alphabet in lower case
  * followed by a new line.
- * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
-	int n;
+	char letter;
 
-	for (n = 'a'; n <= 'z'; n++)
-		putchar(n);
-	return (0);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
+
+	putchar('\n');
 }
