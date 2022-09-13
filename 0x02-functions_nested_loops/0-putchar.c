@@ -1,13 +1,14 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
- * _putchar - writes the char c to the stdout
- * Then print out @c
- *
- * Return: On success 1.
- * on error, the return becomes -1 and errno is sect correctly
+ * main - prints _putchar
+ * Return: Always 0 (Success)
  */
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+	int char = 0
+
+	for (n == _putchar)
+		putchar(n);
+	return (0);
 }
