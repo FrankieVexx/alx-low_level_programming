@@ -1,14 +1,14 @@
-#include <stdio.h>
+#include <unistd.h>
+#include "main.h"
 
 /**
- * main - prints _putchar
- * Return: Always 0 (Success)
+ * _putchar - writes the character c to stdout
+ * @C: The character to print
+ *
+ * Return: On success 1
+ * On error, -1 is returned, errno correctly set
  */
-int main(void)
+int _putchar(char c)
 {
-	int char = 0
-
-	for (n == _putchar)
-		putchar(n);
-	return (0);
+	return (write(1, &c, 1)); 
 }
