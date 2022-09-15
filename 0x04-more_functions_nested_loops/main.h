@@ -13,4 +13,5 @@ void print_square (int size);
 void print_triangele(int size);
 int _putchar(char c);
 void print_number(int n)
+
 #endif
