@@ -1,22 +1,11 @@
 #include "main.h"
-
 /**
- * mul - entry point
- *
- * @a: first input
- *
- * @b: second input
- *
- * Return: Always 0
+ * mul - multiplies two integers
+ * @a: first integer
+ * @b: second integer
+ * Return: result of multiplied integers
  */
-int mul(int a, int b)
+int mul(int a, int b);
 {
-	int result;
-
-	result = a * b;
-
-	_putchar (result);
-	_putchar ('\n');
-
-	return (result);
+	return (a * b);
 }
