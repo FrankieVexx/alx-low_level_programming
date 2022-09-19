@@ -1,5 +1,6 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef _MAIN_H_
+#define _MAIN_H_
+
 
 void reset_to_98(int *n);
 void swap_int(int *a, *b);
@@ -11,5 +12,8 @@ void puts2(char *str);
 void puts_half(char *str);
 void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
+int _putchar(char c);
+int _atoi(char *s)
+
 
 #endif
