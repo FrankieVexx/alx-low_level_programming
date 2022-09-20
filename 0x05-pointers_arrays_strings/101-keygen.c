@@ -13,13 +13,13 @@ int main(void)
 	srand(time(NULL));
 	checksum = 2772;
 	keynumber = 0;
-	while (key number < (checksum - 122))
+	while (keynumber < (checksum - 122))
 	{
 		symbol = (rand() % (122 - 97 + 1)) + 97;/*to print lower case letter*/
 		printf("%c", symbol);
-		key number = key number + symbol;
+		keynumber = keynumber + symbol;
 	}
-	symbol = checksum - key number;
+	symbol = checksum - keynumber;
 	printf("%c", symbol);
 	return (0);
 }
