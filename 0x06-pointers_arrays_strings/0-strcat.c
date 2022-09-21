@@ -1,4 +1,4 @@
-#include "nain.h"
+#include "main.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -9,7 +9,7 @@
  *
  * Return: A pointer to the destination string @dest
  */
-char *_strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
 	int index = 0, dest_len = 0;
 
