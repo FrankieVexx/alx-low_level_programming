@@ -9,20 +9,20 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j noon;
+	unsigned int i, j, bool;
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		noon = 1;
+		bool = 1;
 		for (j = 0; *(accept + j) != '\0'; j++)
 		{
 			if (*(s + i) == *(accept + j))
 			{
-				noon = 0;
+				bool = 0;
 				break;
 			}
 		}
-		if (noon == 1)
+		if (bool == 1)
 			break;
 	}
 	return (i);
