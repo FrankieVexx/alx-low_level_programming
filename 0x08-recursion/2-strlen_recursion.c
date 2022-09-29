@@ -9,7 +9,7 @@ int _strlen_recursion(char *s)
 {
 	if (*s)
 	{
-		return (1 + _strlen_recusions(s +1));
+		return (1 + _strlen_recusions(s + 1));
 	}
 	else
 	{
