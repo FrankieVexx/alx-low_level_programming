@@ -2,8 +2,8 @@
 
 /**
  * _strlen_recursion - size
- * @s: pointer to strng parameters
- * Return: the recusion result
+ * @s: pointer to string parameters
+ * Return: the recursion result
  */
 
 int _strlen_recursion(char *s)
@@ -31,7 +31,7 @@ int p1(char *s, int l)
 
 	if (*s == *(s + 1))
 	{
-		return (pl(s + 1, l - 2));
+		return (p1(s + 1, l - 2));
 	}
 	return (0);
 }
