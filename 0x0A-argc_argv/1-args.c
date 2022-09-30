@@ -3,6 +3,9 @@
 
 /**
  * main - prints the number of arguments passed to it
+ * @argc: the number of arguments given to the program
+ * @argv: an array of pointers to the argument
+ *
  * Return: 0
  */
 
