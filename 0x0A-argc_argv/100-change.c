@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * main - prints the minimum number of coins to createe change for an amout
+ * main - prints the minimum number of coins to createe change for an amount
+ * of money
  * @argc: the number of command line arguments in the program
  * @argv: the array that contains the arguments in the program
  * Return: Always 0
@@ -31,7 +32,7 @@ int main(int argc, char *argv[])
 			cents -= 2;
 		else if (cents >= 1)
 			cents -= 1;
-		ncoins += 1
+		ncoins += 1;
 	}
 	printf("%d\n", ncoins);
 	return (0);
