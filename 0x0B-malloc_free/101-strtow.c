@@ -1,6 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
 
+int word_len(char *str);
+int count_words(char *str);
+char **strtow(char *str);
+
 /**
  * count_word - counts the number of words in a string. A healper
  * @s: the string to evaluate
@@ -8,25 +12,13 @@
  * Return: mumber of words
  */
 
-int count_word(char *s)
+int word_len(char *str)
 {
-	int flag, c, w;
+	int index = 0; len = 0;
 
-	flag = 0;
-	w = 0;
-
-	for (c = 0; s[c] != '\0'; c++)
+	while (*(str + index) && *(str + index) != ' ')
 	{
-		if (s[c] == ' ')
-			flag = 0;
-		else if (flag == 0)
-		{
-			flag = 1;
-			w++;
-
-		}
-
-	}
-
+		len++;
+		index++;
 	return (w);
 }
