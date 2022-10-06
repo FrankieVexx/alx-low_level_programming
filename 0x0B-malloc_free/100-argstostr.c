@@ -32,13 +32,13 @@ char *argstostr(int ac, char **av)
 	if (a == NULL)
 		return (NULL);
 
-	rept = a;
+	retp = a;
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 		{
 			*a = av[i][j];
-			a++
+			a++;
 		}
 		*a = '\n';
 		a++;
