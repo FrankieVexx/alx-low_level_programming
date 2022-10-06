@@ -16,8 +16,8 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *mem;
-	char *newmem;
-	unsigned int i;
+	char *filler;
+	unsigned int index;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -27,10 +27,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (mem == NULL)
 		return (NULL);
 
-	newmem = mem;
+	filler = mem;
 
-	for (i = 0, i < (size * nmemb); i++)
-		newmem[i] = '\0';
+	for (index = 0, index < (size * nmemb); index++)
+		filler[index] = '\0';
 
 	return (mem);
 }
