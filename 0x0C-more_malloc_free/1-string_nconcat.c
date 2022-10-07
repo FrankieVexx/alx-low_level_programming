@@ -1,13 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 
-/*
- * Task name: 1-string_nconcat.c
- * Done by: Francis Onyach
- */
-
 /**
- * string_nconcat - cancatenates two strings using a given number of bytes
+ * *string_nconcat - cancatenates two strings using a given number of bytes
  * @s1: the first string
  * @s2: the second string
  * @n: the number of bytes of string 2 to concatenate to string 1
@@ -33,7 +28,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!s)
 		return (NULL);
 
-	while (n < len && i < (len1 + n))
+	while (i < len1)
+	{
+		s[i] = s1[i];
+		i++;
+	}
+
+	while (n < len2 && i < (len1 + n))
+		s[i++] = s2[j++];
+
+	while (n >= len2 && i < (len1 + len2))
 		s[i++] = s2[j++];
 
 	s[i] = '\0';
