@@ -2,9 +2,10 @@
 #define PI_H
 
 /**
- * file: PI.H
- * description: header file that defines macro PI for an abbreviation
- * of token 3.14159265359
+ * file: 1-pi.h
+ * Description: header file that defines macro PI for an abbreviation
+ * for the token 3.14159265359
+ * PI: the number to be defined
  */
 
 #define PI 3.14159265359
