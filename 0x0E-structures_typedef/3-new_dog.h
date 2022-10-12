@@ -17,12 +17,13 @@ int _strlen(char *s)
 	{
 		i++;
 	}
+
 	return (i);
 }
 
 /**
  * *_strcpy - copies the string pointed to by src includingthe terminating 
- * NULL byte to the buffer
+ * NULL byte to the buffer pointed to by dest
  * @dest: pointer to the buffer where the string is copied
  *
  * Return: pointer to dest
