@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 2)
 	{
-		printf("Error\n")
+		printf("Error\n");
 			exit(1);
 	}
 
@@ -36,6 +36,7 @@ int main(int argc, char *argv[])
 		if (index == bytes - 1)
 			continue;
 		printf(" ");
+
 
 		address++;
 	}
