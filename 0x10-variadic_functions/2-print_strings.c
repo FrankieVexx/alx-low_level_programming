@@ -7,18 +7,20 @@
  * @separator: the string separators
  * @n: the number of strings passed to the function
  * @...: the variable strings to be printed
+ * desc: print nil if string is NULL, and nothing if
+ * separator is NULL
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list strs;
+	va_list strings;
 	char *str;
 	unsigned int i;
 
-	va_start(strs, n);
+	va_start(strings, n);
 
 	for (i = 0; i < n; i++)
 	{
-		str = va_arg(strs, char *);
+		str = va_arg(strings, char *);
 
 
 	if (str == NULL)
@@ -32,5 +34,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	printf("\n");
 
-	va_end(strs)
+	va_end(strings);
 }
