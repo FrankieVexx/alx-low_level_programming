@@ -9,7 +9,7 @@ void print_string(va_list arg);
 void print_all(const char * const format, ...);
 
 /**
- * print_char - prints a character
+ * print_char - prints a char
  * @arg: the list of arguments pointing to the character to be printed
  */
 void print_char(va_list arg)
@@ -68,7 +68,7 @@ void print_string(va_list arg)
 /**
  * print_all - prints anything passed to it followed by a new line
  * @format: a list of arguments passed to the function
- * @...: a variable nuber of arguments passed
+ * @...: a variable number of arguments passed
  *
  * desc: Ignore arguments that are not of type char, int, float or char *
  * Print nil if string argument is NULL
