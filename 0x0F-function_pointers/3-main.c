@@ -11,8 +11,9 @@
  */
 int main(int __attribute__((__unsused__)) argc, char *argv[])
 {
-	int num1, num2;
-	char *op;
+	int arg1, arg2, result;
+	char o;
+	int (*func)(int, int);
 
 	if (agrc != 4)
 	{
@@ -20,23 +21,26 @@ int main(int __attribute__((__unsused__)) argc, char *argv[])
 		exit(98);
 	}
 
-	num1 = atoi(argv[1]);
-	op = argv[2];
-	num2 = atoi(agrv[3]);
+	arg1 = atoi(argv[1]);
+	arg2 = atoi(agrv[3]);
 
-	if (get_op_func9(op) == NULL || op[1] != '\0')
+	func = get_op_func(argv[2]);
+
+	if (!func)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
+	if ((o == '/' || o == '%') && arg2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	printf("%d\n", get _op_func(op)(num1, num2));
+	result = func(arg1, arg2);
+
+	printf("%d\n", result);
 
 	return (0);
 }
