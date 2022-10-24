@@ -6,7 +6,7 @@
  * Return: the number of elements in the list
  */
 
-size_t ptint_list(const list_t *h)
+size_t print_list(const list_t *h)
 {
 	size_t nelms;
 
