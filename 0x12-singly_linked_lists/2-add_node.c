@@ -28,11 +28,11 @@ list_t *add_node(list_t **head, const char *str)
 	 for (len = 0; str[len];)
 		 len++;
 
-	 new->str = dupl;
-	 new->len = len;
-	 new->next = *head;
+	 newn->str = dupl;
+	 newn->len = len;
+	 newn->next = *head;
 
-	 *head = new;
+	 *head = newn;
 
-	 return (new);
+	 return (newn);
 }
