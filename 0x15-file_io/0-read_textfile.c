@@ -3,7 +3,7 @@
 
 /**
  * read_textfile - reads textfileand prints it to POSIX stdout.
- * @filename: A ponter to the name of the file.
+ * @filename: A pointer to the name of the file.
  * @letters: the number of letters the function is supposed to read and print
  *
  * Return: The number of bytes the function can read and print or
@@ -11,28 +11,37 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	size_t o, r, w;
-	char *buffer;
+	int _file;
+	ssize_t _read, _write;
+	char *buffer = malloc(letter);
 
-	if (filename == NULL)
+	if (!finename || !buffer)
 		return (0);
 
-	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
+	_file = open(filename, O_RDONLY);
+	if (_file == -1)
 		return (0);
 
-	o = open(filename, O_RDONLY);
-	r = read(o, buffer, letters);
-	w = write(STDOUT_FILENO, buffe, r);
-
-	if (o == -1 || r == -1 || w == -1 || w != r)
+	_read = read(_file, buffer, letter);
+	if (_read == -1)
+		return (0);
 	{
+		close(_file);
 		free(buffer);
 		return (0);
 	}
 
-	free(buffer);
-	close(o);
+	buffer[letters] = '\0';
 
-	return (w);
+	_write = write(STDOUT_FILENO, buffer, _read);
+	if (_write == -1)
+	{
+		close(_file);
+		free(buffer);
+		return (0);
+	}
+
+	close(_file);
+	free(buffer);
+	return (_write);
 }
