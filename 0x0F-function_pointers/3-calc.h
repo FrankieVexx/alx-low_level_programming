@@ -1,14 +1,11 @@
 #ifndef CALC_H
 #define CALC_H
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 /**
- * struct op - a struct op
- * @op: the operator
- * @f: the associated function
+ *struct op- struct operation
+ *
+ *@op: The operator
+ *@f: the ffunction assosiated
+ *
  */
 typedef struct op
 {
@@ -23,4 +20,6 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
+
 #endif
+
