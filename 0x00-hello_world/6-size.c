@@ -1,15 +1,27 @@
 #include <stdio.h>
-
 /**
- *  main - Entry point
- *  Return: Always 0 (Success)
+ *size off cheacker
+ *
+ * Main entery point
+ *
+ *Return always 0 (success)
  */
-int main(void)
+
+main()
+
 {
-printf("Size of a char: %zu byte(s)\n", sizeof(char));
-printf("Size of an int: %zu byte(s)\n", sizeof(int));
-printf("Size of a long int:%zu byte(s)\n", sizeof(long int));
-printf("Size of a long long int: %zu byte(s)\n", sizeof(long long int));
-printf("Size of a float: %zu byte(s)\n", sizeof(float));
+char           ch = ' ';
+int            int_num = 0;
+float          flt_num = 0.0f;
+long int       long_int_num = 0;
+long long int  long_long_int_num = 0;
+
+printf("sizeof a  char is : %d - byte\n", sizeof(char));
+printf("sizeof an int  is : %d - byte\n", sizeof(int));
+printf("sizeof a  float is : %d - byte\n", sizeof(float));
+printf("sizeof a  long int is : %d - byte\n", sizeof(long int));
+printf("sizeof a  long long int is : %d - byte\n", sizeof(long long int));
 return (0);
+
 }
+
